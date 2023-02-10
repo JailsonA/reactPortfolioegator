@@ -3,6 +3,7 @@ import './about.css';
 function About() {
   return (
     <div >
+      
       about
     </div>
   );
