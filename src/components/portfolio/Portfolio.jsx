@@ -2,10 +2,10 @@ import './portfolio.css'
 
  function Portfolio() {
   return (
-    <div>
+    <section id='portfolio'>
       
       portfolio
-    </div>
+    </section>
   )
 }
 

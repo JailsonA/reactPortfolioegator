@@ -2,10 +2,10 @@ import './testimonial.css';
 
 function Testimonial() {
   return (
-    <div >
+    <section id='testimonials' >
       
       Testmonials
-    </div>
+    </section>
   );
 }
 

@@ -6,7 +6,7 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 function Header() {
   return (
-    <header>
+    <header id='home'>
       <div className="container header_container">
         <h5>Hello</h5>
         <h1>Janilson</h1>

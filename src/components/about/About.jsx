@@ -2,10 +2,10 @@ import './about.css';
 
 function About() {
   return (
-    <div >
+    <section id="about" >
       
-      about
-    </div>
+      about começar aqui
+    </section>
   );
 }
 

@@ -2,10 +2,10 @@ import './contact.css';
 
 function Contact() {
   return (
-    <div >
+    <section id='contact' >
       
       contact
-    </div>
+    </section>
   );
 }
 
