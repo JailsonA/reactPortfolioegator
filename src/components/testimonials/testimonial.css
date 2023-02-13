@@ -1,0 +1,114 @@
+.testimonial_container {
+    width: 40%;
+}
+
+.client_avatar {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.3rem solid var(--color-primary-variant);
+}
+
+.testimonial {
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+.client_review {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+
+/* ========== Swiper ========= */
+
+
+.swiper {
+    width: 40%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--color-primary);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--color-primary) !important;
+}
+
+/* ========== Responsividade Tablets ========= */
+
+@media screen and (max-width:1024px) {
+    .container.testimonial_container {
+        width: 60%;
+    }
+
+}
+
+/* ========== Responsividade Mobile ========= */
+
+@media screen and (max-width:600px) {
+    .container.testimonial_container {
+        width: var(--container-width-sm);
+    }
+
+    .client_review {
+        width: var(--container-width-sm);
+    }
+
+}

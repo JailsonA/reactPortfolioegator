@@ -6,13 +6,13 @@
 
 | [Minimal Free](https://minimal-kit-react.vercel.app/) |
 |-------------------------------------------------------|
-| **6** Demo pages                                      |
+| **React**                                             |
 | ✓ HTML                                                |
 | ✓ CSS                                                 |
 | ✓ JSX                                                 |
-| **Components**                                        |
-| **Components**                                        |
-| -                                                     |
+| ✓ Components                                          |
+| ✓ React-icons                                         |
+| ✓ Swiperjs                                            |
 
 ## Getting started
 

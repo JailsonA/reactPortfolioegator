@@ -5,33 +5,15 @@ import AVT3 from '../../assets/avatar3.jpg';
 import AVT4 from '../../assets/avatar4.jpg';
 
 // import Swiper core and required modules
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import { Pagination } from 'swiper';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-/* import './styles.css'; */
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper';
-
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 function Testimonial() {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
-
   const data = [
     {
       avatar: AVT1,
@@ -60,19 +42,12 @@ function Testimonial() {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
       {/*alteramos o div por swiper */}
-      <Swiper className="container testimonial_container mySwiper"
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
+      <Swiper className="container testimonial_container"
+        // install Swiper modules
+        modules={[Pagination]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
       >
         {
           data.map(({ avatar, name, review }, index) => {
@@ -90,12 +65,6 @@ function Testimonial() {
             );
           })
         }
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
-        </div>
       </Swiper>
     </section>
   );
