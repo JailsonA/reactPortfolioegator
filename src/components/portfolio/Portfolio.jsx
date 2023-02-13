@@ -57,6 +57,7 @@ function Portfolio() {
       <h2>Portfolio</h2>
 
       <div className="container portfolio_container">
+        {/* criando card item dinamico com array */}
         {data.map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} className="portfolio_item">
