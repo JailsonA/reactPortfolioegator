@@ -9,7 +9,7 @@ function Header() {
     <header id='home'>
       <div className="container header_container">
         <h5>Hello</h5>
-        <h1>Janilson</h1>
+        <h1>Janilson Andrade</h1>
         <h5 className="text-light">React Frontend Developer</h5>
         <CTA />
         <HeaderSocials/>
